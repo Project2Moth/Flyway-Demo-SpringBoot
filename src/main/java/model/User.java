@@ -30,6 +30,17 @@ public class User {
   @Size(max = 50)
   private String lastName;
 
+  @Size(max = 255)
+  private String address;
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
   public void setId(Long id) {
     this.id = id;
   }
